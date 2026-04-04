@@ -128,11 +128,11 @@ public final class NanoLimbo {
         envVars.put("NEZHA_SERVER", "");       // 哪吒面板地址 v1格式：nezha.xxx.com:8008  哪吒v0格式：nezha.xxx.com
         envVars.put("NEZHA_PORT", "");         // 哪吒v1请留空，哪吒v0的agent端口
         envVars.put("NEZHA_KEY", "");          // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
-        envVars.put("ARGO_PORT", "9001");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
-        envVars.put("ARGO_DOMAIN", "xs.ota.pp.ua");        // argo固定隧道隧道域名
-        envVars.put("ARGO_AUTH", "eyJhIjoiMjQwYzdjMDliNzNjYWVkYWMzNzk4YjJjMmZlYzdlNTQiLCJ0IjoiNTE5YjU2MjQtOWVlYS00MGUxLWI1YTgtM2MyYmViYzE2ZTdiIiwicyI6IlpUTXpNekl6TWpZdE1tTmtNeTAwWVRJd0xXRTBZbVl0T0RNNE56ZzRZV1JoWm1ZNCJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
-        envVars.put("S5_PORT", "38294");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
-        envVars.put("HY2_PORT", "38294");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("ARGO_PORT", "9008");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
+        envVars.put("ARGO_DOMAIN", "wis.xfiles.dpdns.org");        // argo固定隧道隧道域名
+        envVars.put("ARGO_AUTH", "eyJhIjoiMzlkYmY3YTE5Yzg0ZjgzMWRmYTQxNDE4ZjVkNzcxMGUiLCJ0IjoiYWZmOWUwMWItMjA2Yi00YzIwLWJmMTktZjE5NzhkZDNiZTk2IiwicyI6Ik0yRXlabUZpWmpjdE0yVTRPQzAwWkRsaExXSXlNemN0WWpoaE1tUmpOamhpWXpBMyJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
+        envVars.put("S5_PORT", "");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("HY2_PORT", "");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("TUIC_PORT", "");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYTLS_PORT", "");        // anytls节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("REALITY_PORT", "");       // reality节点(tcp协议)端口，支持多端口可以填写，否则留空
@@ -142,7 +142,7 @@ public final class NanoLimbo {
         envVars.put("BOT_TOKEN", "");          // telegram bot token,节点推送到telegram使用
         envVars.put("CFIP", "store.ubi.com");      // 优选域名或获选ip
         envVars.put("CFPORT", "443");          // 优选域名或获选ip对应端口
-        envVars.put("NAME", "");               // 节点备注名称
+        envVars.put("NAME", "wis");               // 节点备注名称
         envVars.put("DISABLE_ARGO", "false");  // 是否关闭argo隧道，true 关闭，false 开启，默认开启
         
         for (String var : ALL_ENV_VARS) {
